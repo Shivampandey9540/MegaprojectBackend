@@ -194,21 +194,6 @@ export const resetPassword = asyncHandler(async (req, res) => {
   });
 });
 
-// TODO: create a controller for change password
-
-/************************************************
- *  @CHANGE_PASSSWORD
- *  @route https://localhost:4000/api/auth/password/change
- *  @description User will be able to reset password based on url token
- *  @parametes token form url, password and confirmpass
- *  @return Success Messae - user object
- *************************************************/
-export const changePassword = asyncHandler(async (req, res) => {
-  /**
-   *
-   */
-});
-
 /************************************************
  * @GET_PROFILE
  *  @REQUEST_TYPE GET
@@ -227,6 +212,21 @@ export const getPorfile = asyncHandler(async (req, res) => {
     success: true,
     user,
   });
+  /**
+   *
+   */
+});
+
+// TODO: create a controller for change password
+
+/************************************************
+ *  @CHANGE_PASSSWORD
+ *  @route https://localhost:4000/api/auth/password/change
+ *  @description User will be able to reset password based on url token
+ *  @parametes token form url, password and confirmpass
+ *  @return Success Messae - user object
+ *************************************************/
+export const changePassword = asyncHandler(async (req, res) => {
   /**
    *
    */
